@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../assets/logo.svg';
+import { Container, Nav, ListaHeader } from '../Styles';
 
 const Header = () => {
   const navList = [
@@ -9,10 +10,10 @@ const Header = () => {
   ];
 
   return (
-    <header>
-      <nav>
+    <Container>
+      <Nav>
         <img src={logo} alt="Logo InsuCheck" width={186} height={68} />
-        <div className="listaHeader">
+        <ListaHeader>
           {navList.map((nav) => {
             return (
               <a key={nav.id} href={`#${nav.id}`}>
@@ -20,13 +21,13 @@ const Header = () => {
               </a>
             );
           })}
-        </div>
+        </ListaHeader>
 
         <div className="downloadBtn">
           <button>Download</button>
         </div>
-      </nav>
-    </header>
+      </Nav>
+    </Container>
   );
 };
 
