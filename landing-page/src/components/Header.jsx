@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../assets/images/logo.svg';
-import { Container, Nav, ListaHeader } from '../Styles';
+import { Container, Nav, ListaHeader } from '../assets/styles/Header.styles';
 
 const Header = () => {
   const navList = [
