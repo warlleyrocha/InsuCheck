@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../assets/images/logo.svg';
-import { Container, Nav, ListaHeader } from '../assets/styles/Header.styles';
+import { Container, Nav, ListaHeader, Button } from '../assets/styles/Header.styles';
 
 const Header = () => {
   const navList = [
@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <Container>
       <Nav>
-        <img src={logo} alt="Logo InsuCheck" width={186} height={68} />
+        <img src={logo} alt="Logo InsuCheck" width={138} height={68} />
         <ListaHeader>
           {navList.map((nav) => {
             return (
@@ -22,10 +22,7 @@ const Header = () => {
             );
           })}
         </ListaHeader>
-
-        <div className="downloadBtn">
-          <button>Download</button>
-        </div>
+          <Button>Download</Button>
       </Nav>
     </Container>
   );
