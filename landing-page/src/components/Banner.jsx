@@ -13,7 +13,7 @@ const Banner = () => {
         </p>
         <Button>Teste o APK</Button>
       </ContainerTexto>
-      <img src={iPhone13pro} width={360} height={360} />
+      <img src={iPhone13pro} width={560} height={560} />
     </Container>
   );
 };

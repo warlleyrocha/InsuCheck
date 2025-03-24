@@ -8,7 +8,7 @@ import App from './App';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <GlobalStyle>
-      <App />
+      <App style={{ margin: 0 }} />
     </GlobalStyle>
   </React.StrictMode>,
 );

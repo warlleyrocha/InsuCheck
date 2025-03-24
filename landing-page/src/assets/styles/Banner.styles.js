@@ -2,49 +2,39 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   font-family: font/family/Body;
-  max-width: 1500px;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
   align-items: center;
-  background: rgba(253, 253, 253, 1);
   justify-content: center;
-  width: 50%;
+  gap: 20px;
+  background: rgba(253, 253, 253, 1);
+  width: 100%;
 
   img {
-    padding-top: 200px;
+    padding-top: 150px;
   }
 `;
 
 export const ContainerTexto = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 20px;
   position: relative;
-  width: 50%;
-  padding-top: 248px;
-
-  ::before {
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 23px;
-    background-image: url('DetalheAzul');
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: block;
-  }
+  width: 30%;
+  padding-top: 128px;
+  padding-left: 90px;
 
   h1 {
     color: rgba(34, 34, 34, 1);
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 28px;
+    font-weight: 600;
   }
 
   p {
     font-weight: 400;
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 16px;
+    line-height: 22px;
     color: rgba(51, 51, 51, 1);
   }
 `;
@@ -67,6 +57,8 @@ export const Button = styled.div`
   padding-bottom: 10px;
   padding-left: 22px;
   width: fit-content;
+
+  transition: all 0.2s ease;
 
   &:hover {
     background-color: #fff;
