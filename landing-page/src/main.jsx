@@ -8,7 +8,7 @@ import App from './App';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <UrbanistFont>
-      <App style={{ margin: 0 }} />
+      <App />
     </UrbanistFont>
   </React.StrictMode>,
 );
