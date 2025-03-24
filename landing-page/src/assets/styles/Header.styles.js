@@ -3,42 +3,38 @@ import styled from 'styled-components';
 export const GlobalStyle = styled.div`
   @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
   font-family: 'Urbanist', sans-serif;
-  html,
-  body {
-    overflow: hidden;
-    height: 100%;
+
+  *,
+  *::before,
+  *::after {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
   }
 
-  #smooth-wrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
+  html,
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 1500px;
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    scroll-behavior: smooth;
   }
 
-  #smooth-content {
-    width: 100%;
-    will-change: transform;
-  }
-
-  .main-header {
-    width: 100%;
-    z-index: 100;
+  #root {
+    margin: 0 !important;
+    padding: 0 !important;
+    min-height: 100vh;
   }
 `;
 
 export const Container = styled.div`
-  max-width: 1500px;
-  margin: 0 auto;
-  padding: 10px 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  padding-top: 0;
   position: fixed;
   left: 0;
   right: 0;
@@ -46,14 +42,12 @@ export const Container = styled.div`
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(6px);
   border-bottom: 1px solid rgba(77, 77, 77, 0.2);
-  padding-right: 158px;
-  padding-left: 158px;
 `;
 
 export const Nav = styled.div`
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 120px;
   padding: 10px 20px;
 `;
 
@@ -70,6 +64,9 @@ export const ListaHeader = styled.div`
 
     &:hover {
       color: #000;
+      padding-bottom: 3px;
+      border-bottom: 2px solid #000;
+      transition: all 0.2s ease;
     }
   }
 `;
@@ -88,7 +85,7 @@ export const Button = styled.button`
   padding-bottom: 10px;
   padding-left: 22px;
 
-  transition: all 0.5s ease;;
+  transition: all 0.2s ease;
 
   &:hover {
     background-color: #2f39d3;

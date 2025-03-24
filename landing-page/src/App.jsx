@@ -2,13 +2,10 @@ import Header from './components/Header.jsx';
 import Banner from './components/Banner.jsx';
 
 function App() {
-
   return (
-    <div id="smooth-wrapper">
-      <div id="smooth-content">
-        <Header />
-        <Banner />
-      </div>
+    <div style={{ margin: 0 }}>
+      <Header />
+      <Banner />
     </div>
   );
 }

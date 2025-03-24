@@ -16,7 +16,6 @@ const Header = () => {
   ];
 
   return (
-    <header className="main-header">
       <Container>
         <Nav>
           <img src={logo} alt="Logo InsuCheck" width={138} height={68} />
@@ -32,7 +31,6 @@ const Header = () => {
           <Button>Download</Button>
         </Nav>
       </Container>
-    </header>
   );
 };
 
