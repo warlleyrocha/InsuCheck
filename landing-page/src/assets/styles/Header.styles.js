@@ -5,6 +5,11 @@ export const UrbanistFont = styled.div`
   font-family: 'Urbanist', sans-serif;
 `;
 
+export const LatoFont = styled.div`
+  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+  font-family: 'Lato', sans-serif;
+`
+
 export const Container = styled.div`
   display: flex;
   flex-direction: row;
