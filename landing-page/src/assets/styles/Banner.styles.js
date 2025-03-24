@@ -8,9 +8,8 @@ export const Container = styled.div`
   flex-direction: row;
   align-items: center;
   background: rgba(253, 253, 253, 1);
-  justify-content: space-between;
-  padding-right: 158px;
-  padding-left: 158px;
+  justify-content: center;
+  width: 50%;
 
   img {
     padding-top: 200px;
@@ -51,8 +50,10 @@ export const ContainerTexto = styled.div`
 `;
 
 export const Button = styled.div`
-  width: 28%;
   background-color: #2f39d3;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   color: #fff;
   font-weight: 700;
   line-height: 24px;
@@ -65,6 +66,7 @@ export const Button = styled.div`
   padding-right: 22px;
   padding-bottom: 10px;
   padding-left: 22px;
+  width: fit-content;
 
   &:hover {
     background-color: #fff;
