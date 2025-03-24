@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  font-family: font/family/Body;
+  font-family: 'Urbanist', sans-serif;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -36,6 +36,7 @@ export const ContainerTexto = styled.div`
     font-size: 16px;
     line-height: 22px;
     color: rgba(51, 51, 51, 1);
+    font-family: 'Lato', sans-serif;
   }
 `;
 
