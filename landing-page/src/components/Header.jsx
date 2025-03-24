@@ -6,22 +6,8 @@ import {
   ListaHeader,
   Button,
 } from '../assets/styles/Header.styles';
-import { useLayoutEffect, useRef } from 'react';
-import gsap from 'gsap';
 
 const Header = () => {
-  const headerRef = useRef();
-
-  useLayoutEffect(() => {
-    gsap.registerPlugin(gsap.ScrollTrigger);
-    
-    gsap.ScrollTrigger.create({
-      trigger: headerRef.current,
-      start: 'top top',
-      pin: true,
-      pinSpacing: false
-    });
-  }, []);
   
   const navList = [
     { id: 'sobre', text: 'Sobre' },
@@ -30,7 +16,7 @@ const Header = () => {
   ];
 
   return (
-    <header ref={headerRef} className="main-header">
+    <header className="main-header">
       <Container>
         <Nav>
           <img src={logo} alt="Logo InsuCheck" width={138} height={68} />
