@@ -18,6 +18,9 @@ export const Container = styled.div`
   left: 0;
   right: 0;
   z-index: 1000;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(77, 77, 77, 0.2);
 `;
 
 export const Nav = styled.div`
@@ -25,7 +28,7 @@ export const Nav = styled.div`
   align-items: center;
   gap: 20px;
   padding: 10px 20px;
-  `;
+`;
 
 export const ListaHeader = styled.div`
   display: flex;
