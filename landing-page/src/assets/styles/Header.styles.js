@@ -1,32 +1,8 @@
 import styled from 'styled-components';
 
-export const GlobalStyle = styled.div`
+export const UrbanistFont = styled.div`
   @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
   font-family: 'Urbanist', sans-serif;
-
-  *,
-  *::before,
-  *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  html,
-  body {
-    margin: 0 !important;
-    padding: 0 !important;
-    max-width: 1500px;
-    width: 100%;
-    height: 100%;
-    scroll-behavior: smooth;
-  }
-
-  #root {
-    margin: 0 !important;
-    padding: 0 !important;
-    min-height: 100vh;
-  }
 `;
 
 export const Container = styled.div`
