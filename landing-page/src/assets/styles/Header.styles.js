@@ -88,6 +88,8 @@ export const Button = styled.button`
   padding-bottom: 10px;
   padding-left: 22px;
 
+  transition: all 0.5s ease;;
+
   &:hover {
     background-color: #2f39d3;
     color: #fff;

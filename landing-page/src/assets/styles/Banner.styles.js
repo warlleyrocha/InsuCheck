@@ -68,6 +68,8 @@ export const Button = styled.div`
   padding-left: 22px;
   width: fit-content;
 
+  transition: all 0.5s ease;;
+
   &:hover {
     background-color: #fff;
     color: #2f39d3;
