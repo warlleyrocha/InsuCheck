@@ -3,6 +3,32 @@ import styled from 'styled-components';
 export const GlobalStyle = styled.div`
   @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
   font-family: 'Urbanist', sans-serif;
+  html,
+  body {
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #smooth-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  #smooth-content {
+    width: 100%;
+    will-change: transform;
+  }
+
+  .main-header {
+    width: 100%;
+    z-index: 100;
+  }
 `;
 
 export const Container = styled.div`
