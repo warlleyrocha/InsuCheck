@@ -15,6 +15,7 @@ export const Fundo = styled.div`
 export const Container = styled.div`
   font-family: 'Urbanist', sans-serif;
   margin: 0 auto;
+  padding-top: 120px;
   display: flex;
   flex-direction: row;
   align-items: center;
