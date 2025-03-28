@@ -6,9 +6,10 @@ export const Fundo = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
+  width: 1512px;
+  height: 694px;
   margin: 0 auto;
+  margin-top: 120px;
 `;
 
 export const Container = styled.div`
