@@ -26,10 +26,23 @@ export const Container = styled.div`
 
 export const Text = styled.div`
   color: rgba(253, 253, 253, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   h1 {
     font-size: 44px;
     font-weight: 700;
-    line-height: 48.4px;
+    line-height: 18.4px;
+  };
+
+  p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 29.8px;
+    flex-wrap: wrap;
+    width: 80ch;
+    text-align: center;
   }
 `
