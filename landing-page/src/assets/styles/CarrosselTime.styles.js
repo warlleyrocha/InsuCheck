@@ -20,3 +20,13 @@ export const Container = styled.div`
   justify-content: center;
   width: 100%;
 `;
+
+export const Text = styled.div`
+  color: rgba(253, 253, 253, 1);
+
+  h1 {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 48.4px;
+  }
+`
