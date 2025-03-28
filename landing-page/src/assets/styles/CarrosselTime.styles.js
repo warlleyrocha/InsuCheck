@@ -10,6 +10,7 @@ export const Fundo = styled.div`
   height: 694px;
   margin: 0 auto;
   margin-top: 120px;
+  margin-bottom: 120px;
 `;
 
 export const Container = styled.div`
