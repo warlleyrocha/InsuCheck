@@ -24,7 +24,7 @@ const CarrosselApp = () => {
   const [activeIndex, setActiveIndex] = useState(3); // Começa no terceiro item
   const scrollTimeout = useRef(null);
   const [activeRodape, setActiveRodape] = useState(itensOriginais[activeIndex]?.idRodape || 0);
-  let windowSize;
+  
   
   const [itens, setItens] = useState(() => {
     const ultimosItens = itensOriginais.slice(-2).map((item, idx) => ({
@@ -40,11 +40,7 @@ const CarrosselApp = () => {
     return [...ultimosItens, ...primeirosItens];
   });
 
-  useEffect(() => {
-    windowSize = window.innerWidth;
-    console.log(windowSize)
-  },[])
-
+  
   const handleScroll = () => {
     if (!carrosselRef.current) return;
 
@@ -127,7 +123,7 @@ const CarrosselApp = () => {
   };
 
   return (
-    <div style={{width: "100%", display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center"}}>
+    <div style={{backgroundColor: "#FDFDFD",width: "100%", display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center"}}>
     <div ref={carrosselRef} className="carrossel-container-app">
       {itens.map((item, index) => (
         <div
