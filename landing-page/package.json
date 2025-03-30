@@ -10,12 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "lucide-react": "^0.483.0",
+    "@gsap/react": "^2.1.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-slick": "^0.30.3",
-    "slick-carousel": "^1.8.1",
-    "swiper": "^11.2.6"
+    "styled-components": "^6.1.16"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
