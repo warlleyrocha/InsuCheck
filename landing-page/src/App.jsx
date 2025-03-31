@@ -5,7 +5,7 @@ import CarrosselTime from './components/CarrosselTime.jsx';
 
 function App() {
   return (
-    <div style={{ margin: 0 }}>
+    <div style={{ margin: 0, alignContent: 'center', justifyContent: 'center' }}>
       <Header />
       <Banner />
       {/* espaço para carrossel do app */}
