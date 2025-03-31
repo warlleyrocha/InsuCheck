@@ -8,6 +8,7 @@ function App() {
     <div style={{ margin: 0 }}>
       <Header />
       <Banner />
+      {/* espaço para carrossel do app */}
       <CarrosselTime />
       <Footer />
     </div>
