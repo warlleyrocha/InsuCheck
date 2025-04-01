@@ -1,6 +1,6 @@
-import CarrosselApp from './components/CarrosselApp.jsx'
 import Header from './components/Header.jsx';
 import Banner from './components/Banner.jsx';
+import CarrosselApp from './components/CarrosselApp.jsx'
 import Footer from './components/Footer.jsx';
 import CarrosselTime from './components/CarrosselTime.jsx';
 
