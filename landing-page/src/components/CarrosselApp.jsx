@@ -21,7 +21,7 @@ const CarrosselApp = () => {
   ];
 
   const carrosselRef = useRef(null);
-  const [activeIndex, setActiveIndex] = useState(3); // Começa no terceiro item
+  const [activeIndex, setActiveIndex] = useState(3); 
   const scrollTimeout = useRef(null);
   const [activeRodape, setActiveRodape] = useState(itensOriginais[activeIndex]?.idRodape || 0);
   
@@ -115,12 +115,19 @@ const CarrosselApp = () => {
   const handleClick = (index) => {
     if (carrosselRef.current) {
       const cardWidth = 792;
-      const scrollX = index * cardWidth;
-      carrosselRef.current.scrollTo({ left: scrollX, behavior: "smooth" });
-      setActiveIndex(index);
-      console.log(itens)
+      
+      if (index < activeIndex) {
+        // Simula a seta para a esquerda
+        carrosselRef.current.scrollBy({ left: -cardWidth, behavior: "smooth" });
+        setActiveIndex((prev) => Math.max(0, prev - 1));
+      } else if (index > activeIndex) {
+        // Simula a seta para a direita
+        carrosselRef.current.scrollBy({ left: cardWidth, behavior: "smooth" });
+        setActiveIndex((prev) => Math.min(itens.length - 1, prev + 1));
+      }
     }
   };
+  
 
   return (
     <div style={{backgroundColor: "#FDFDFD",width: "100%", display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center"}}>
@@ -135,7 +142,8 @@ const CarrosselApp = () => {
         </div>
       ))}
     </div>
-    <RodapeCarrossel totalSteps={5} activeStep={activeRodape} />
+    <RodapeCarrossel totalSteps={5} activeIndex={activeIndex} />
+
     </div>
   );
 };
