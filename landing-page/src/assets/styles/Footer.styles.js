@@ -3,6 +3,9 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   flex-direction: row;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: left;
   font-family: 'Urbanist', sans-serif;
   padding-top: 44px;
   padding-right: 158px;
