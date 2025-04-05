@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+
+.carrossel-container-app {
+    width: 100%;
+    max-width: 1582px;
+    height: auto;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 20px 0;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.carrossel-container-app::-webkit-scrollbar {
+    display: none;
+}
+
+.cardApp {
+    text-align: center;
+    align-items: center;
+    width: 792px;
+    height: 250px;
+    scroll-snap-align: center;
+    flex-shrink: 0;
+    opacity: 0.5;
+    transform: scale(0.8);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.cardApp.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.cardApp h3 {
+    font-size: 32px;
+    font-family: "Urbanist", sans-serif;
+}
+
+.cardApp p {
+    font-size: 20px;
+    font-family: "Lato", sans-serif;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .cardApp {
+        width: 90%;
+        height: auto;
+        opacity: 1;
+        transform: scale(1);
+    }
+    .cardApp h3 {
+        font-size: 24px;
+    }
+    .cardApp p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .carrossel-container-app {
+        padding: 10px 0;
+    }
+    .cardApp {
+        width: 100%;
+        height: auto;
+        transform: scale(1);
+    }
+    .cardApp.active {
+        transform: scale(1.05);
+    }
+    .cardApp h3 {
+        font-size: 20px;
+    }
+    .cardApp p {
+        font-size: 14px;
+    }
+}
