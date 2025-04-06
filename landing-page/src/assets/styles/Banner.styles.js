@@ -19,7 +19,7 @@ export const Container = styled.div`
 export const ContainerTexto = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 5px;
   position: relative;
   width: 30%;
   padding-top: 128px;
@@ -27,14 +27,14 @@ export const ContainerTexto = styled.div`
 
   h1 {
     color: rgba(34, 34, 34, 1);
-    font-size: 28px;
+    font-size: 44px;
     font-weight: 600;
   }
 
   p {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 20px;
+    line-height: 30px;
     color: rgba(51, 51, 51, 1);
     font-family: 'Lato', sans-serif;
   }
@@ -48,15 +48,12 @@ export const Button = styled.div`
   color: #fff;
   font-weight: 700;
   line-height: 24px;
-  font-size: 14px;
+  font-size: 24px;
   border: 1px solid #2f39d3;
   border-radius: 8px;
   cursor: pointer;
   margin-top: 10px;
-  padding-top: 10px;
-  padding-right: 22px;
-  padding-bottom: 10px;
-  padding-left: 22px;
+  padding: 16px 28px;
   width: fit-content;
 
   transition: all 0.2s ease;
