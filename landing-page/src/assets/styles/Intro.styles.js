@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import DetalhePontos from '../images/DetalhePontos.svg';
+
 export const Container = styled.div`
   margin: 0 auto;
   max-width: 1512px;
@@ -10,7 +12,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   width: 100%;
 
   img {
@@ -21,19 +23,32 @@ export const Container = styled.div`
 export const Text = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: left;
-  padding-left: 60px;
+  align-items: flex-start;
+  padding-left: 220px;
 
   h1 {
-    color: #1E272F;
+    color: #1e272f;
     font-size: 44px;
     font-weight: 700;
     line-height: 60px;
     width: 20ch;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url(${DetalhePontos});
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 270px;
+      height: 270px;
+      left: -222px;
+      top: 55px;
+    }
   }
 
   p {
-    color: #1E272FCC;
+    color: #1e272fcc;
     font-size: 20px;
     font-weight: 500;
     line-height: 20px;
