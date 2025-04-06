@@ -3,16 +3,15 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   flex-direction: row;
+  max-width: 1512px;
   margin: 0 auto;
   align-items: center;
   justify-content: left;
   font-family: 'Urbanist', sans-serif;
-  padding-top: 44px;
-  padding-right: 158px;
-  padding-bottom: 14px;
-  padding-left: 278px;
+  padding: 44px 158px 14px;
   gap: 32px;
   background-color: rgba(253, 253, 253, 1);
+  margin-bottom: 20px;
 `;
 
 export const Text = styled.div`
