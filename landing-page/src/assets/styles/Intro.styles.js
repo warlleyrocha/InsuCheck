@@ -12,3 +12,27 @@ export const Container = styled.div`
   justify-content: center;
   width: 100%;
 `;
+
+export const Text = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    color: #1E272F;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 18.4px;
+  }
+
+  p {
+    color: #1E272FCC;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 29.8px;
+    flex-wrap: wrap;
+    width: 80ch;
+    text-align: center;
+  }
+`;
