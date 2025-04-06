@@ -25,7 +25,7 @@ export const Text = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 220px;
+  padding-left: 200px;
 
   h1 {
     color: #1e272f;
@@ -59,9 +59,10 @@ export const Text = styled.div`
 `;
 
 export const ImageStack = styled.div`
-position: relative; 
-width: 100%;       
-height: 100%;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-left: 14px;
 `;
 
 export const BaseImage = styled.img`
@@ -75,13 +76,13 @@ export const OverlayImage = styled.img`
   position: absolute;
   transform: translate(-50%, -50%);
   left: 120px;
-  z-index: 2;  
+  z-index: 2;
 `;
 
 export const BlobDetalhe = styled.img`
   position: absolute;
   transform: translate(-50%, -50%);
-  left: 1560px;
+  left: 1530px;
   top: -56px;
-  z-index: 2;  
+  z-index: 2;
 `;
