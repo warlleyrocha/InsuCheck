@@ -56,3 +56,23 @@ export const Text = styled.div`
     width: 80ch;
   }
 `;
+
+export const ImageStack = styled.div`
+position: relative; 
+width: 100%;       
+height: 100%;
+`;
+
+export const BaseImage = styled.img`
+  position: absolute;
+  object-fit: contain;
+  top: -160px;
+  left: -205px;
+`;
+
+export const OverlayImage = styled.img`
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 120px;
+  z-index: 2;  
+`;
