@@ -13,9 +13,7 @@ const Intro = () => {
         </p>
         <Button>Teste o APK</Button>
       </Text>
-      <div className='img-container'>
         <img src={IphoneImg} width={275} height={595} />
-      </div>
     </Container>
   );
 };
