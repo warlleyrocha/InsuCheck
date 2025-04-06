@@ -1,8 +1,11 @@
 import React from 'react'
+import { Container } from '../assets/styles/Intro.styles'
 
 const Intro = () => {
   return (
-    <div>Intro</div>
+    <Container>
+      <p>olaa</p>
+    </Container>
   )
 }
 
