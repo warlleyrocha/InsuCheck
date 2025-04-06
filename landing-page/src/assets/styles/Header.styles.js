@@ -27,15 +27,15 @@ export const Container = styled.div`
 export const Nav = styled.div`
   display: flex;
   align-items: center;
-  gap: 120px;
-  padding: 10px 20px;
+  gap: 220px;
+  padding: 30px 20px;
 `;
 
 export const ListaHeader = styled.div`
   display: flex;
   align-items: center;
   gap: 15px;
-  font-size: 13px;
+  font-size: 23px;
 
   a {
     color: #333;
@@ -56,14 +56,11 @@ export const Button = styled.button`
   color: #2f39d3;
   font-weight: 700;
   line-height: 24px;
-  font-size: 14px;
+  font-size: 24px;
   border: 1.5px solid #2f39d3;
   border-radius: 8px;
   cursor: pointer;
-  padding-top: 10px;
-  padding-right: 22px;
-  padding-bottom: 10px;
-  padding-left: 22px;
+  padding: 14px 24px;
 
   transition: all 0.2s ease;
 
