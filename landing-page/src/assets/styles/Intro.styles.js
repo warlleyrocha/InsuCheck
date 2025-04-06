@@ -14,6 +14,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
+  position: relative;
 
   img {
     padding-right: 260px;
@@ -74,5 +75,13 @@ export const OverlayImage = styled.img`
   position: absolute;
   transform: translate(-50%, -50%);
   left: 120px;
+  z-index: 2;  
+`;
+
+export const BlobDetalhe = styled.img`
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 1560px;
+  top: -56px;
   z-index: 2;  
 `;

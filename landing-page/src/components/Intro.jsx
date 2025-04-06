@@ -5,10 +5,12 @@ import {
   BaseImage,
   OverlayImage,
   ImageStack,
+  BlobDetalhe,
 } from '../assets/styles/Intro.styles';
 import { Button } from '../assets/styles/Banner.styles';
 import IphoneImg from '../assets/images/1IPhone13Pro.svg';
 import DetalheCirculos from '../assets/images/DetalheCirculos.svg';
+import BlobAzul from '../assets/images/BlobAzul.svg'
 
 const Intro = () => {
   return (
@@ -24,6 +26,7 @@ const Intro = () => {
         <BaseImage src={DetalheCirculos} width={400} height={400} />
         <OverlayImage src={IphoneImg} width={275} height={595} />
       </ImageStack>
+      <BlobDetalhe src={BlobAzul} width={185} height={125} />
     </Container>
   );
 };
