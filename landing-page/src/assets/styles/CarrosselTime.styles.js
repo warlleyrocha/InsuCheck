@@ -6,10 +6,12 @@ export const Fundo = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  width: 100vw;
-  height: 746px;
-  margin-top: 120px;
-  margin-bottom: 120px;
+  width: 100%;
+  margin: 120px 0;
+
+  @media (max-width: 1000px) {
+    background-size: cover;
+  }
 `;
 
 export const Container = styled.div`
@@ -43,5 +45,11 @@ export const Text = styled.div`
     flex-wrap: wrap;
     width: 100ch;
     text-align: center;
+  }
+
+  @media (max-width: 1000px) {
+    p {
+      width: 90%;
+    }
   }
 `
