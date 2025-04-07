@@ -19,6 +19,15 @@ export const Container = styled.div`
   img {
     padding-right: 260px;
   }
+
+  @media (max-width: 995px) {
+    max-width: 995px;
+    flex-direction: column;
+    padding-bottom: 680px;
+
+    img {
+    }
+  }
 `;
 
 export const Text = styled.div`
@@ -55,6 +64,10 @@ export const Text = styled.div`
     line-height: 30px;
     flex-wrap: wrap;
     width: 50ch;
+
+    @media (max-width: 995px) {
+      width: 30ch;
+    }
   }
 `;
 
@@ -70,6 +83,11 @@ export const BaseImage = styled.img`
   object-fit: contain;
   top: -160px;
   left: -205px;
+
+  @media (max-width: 995px) {
+    top: 120px;
+    left: 208px;
+  }
 `;
 
 export const OverlayImage = styled.img`
@@ -77,6 +95,11 @@ export const OverlayImage = styled.img`
   transform: translate(-50%, -50%);
   left: 120px;
   z-index: 2;
+
+  @media (max-width: 995px) {
+    transform: none;
+    left: 260px;
+  }
 `;
 
 export const BlobDetalhe = styled.img`
@@ -85,4 +108,10 @@ export const BlobDetalhe = styled.img`
   left: 1430px;
   top: -56px;
   z-index: 2;
+
+  @media (max-width: 995px) {
+    transform: none;
+    left: 750px;
+    top: -17px;
+  }
 `;
