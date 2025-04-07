@@ -52,9 +52,9 @@ export const Text = styled.div`
     color: #1e272fcc;
     font-size: 20px;
     font-weight: 500;
-    line-height: 20px;
+    line-height: 30px;
     flex-wrap: wrap;
-    width: 80ch;
+    width: 50ch;
   }
 `;
 
@@ -62,7 +62,7 @@ export const ImageStack = styled.div`
   position: relative;
   width: 100%;
   height: 100%;
-  margin-left: 14px;
+  margin-left: 274px;
 `;
 
 export const BaseImage = styled.img`
@@ -82,7 +82,7 @@ export const OverlayImage = styled.img`
 export const BlobDetalhe = styled.img`
   position: absolute;
   transform: translate(-50%, -50%);
-  left: 1530px;
+  left: 1430px;
   top: -56px;
   z-index: 2;
 `;
