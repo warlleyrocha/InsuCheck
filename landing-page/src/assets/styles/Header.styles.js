@@ -27,20 +27,35 @@ export const Container = styled.div`
 export const Nav = styled.div`
   display: flex;
   align-items: center;
-  gap: 220px;
-  padding: 30px 20px;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+
+  @media (max-width: 995px) {
+    gap: 1px;
+    padding: 15px 8px;
+  }
 `;
 
 export const ListaHeader = styled.div`
   display: flex;
   align-items: center;
-  gap: 15px;
   font-size: 23px;
+  gap: 10px;
+  margin-left: 130px;
+  margin-right: 130px;
+
+  @media (max-width: 995px) {
+    font-size: 20px;
+    gap: 8px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
 
   a {
     color: #333;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 8px;
 
     &:hover {
       color: #000;
@@ -67,5 +82,11 @@ export const Button = styled.button`
   &:hover {
     background-color: #2f39d3;
     color: #fff;
+  }
+
+  @media (max-width: 995px) {
+    font-size: 18px;
+    margin-left: 38px;
+    margin-right: 38px;
   }
 `;
