@@ -12,6 +12,12 @@ const SlideContainer = styled.div`
   align-items: flex-start;
   padding: 24px;
   flex-shrink: 0;
+
+  @media (max-width: 768px) {
+    width: 50vh;
+    height: auto;
+    padding: 16px;
+  }
 `;
 
 const TopSection = styled.div`

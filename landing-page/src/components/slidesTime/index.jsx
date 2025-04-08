@@ -69,6 +69,10 @@ const SPagination = styled.div`
       background: #2F39D3;
     }
   }
+
+  @media (max-width: 768px) {
+    gap: 6px;
+  }
 `;
 
 const Carousel = ({ slides, slidesPerPage }) => {
