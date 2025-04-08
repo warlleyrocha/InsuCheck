@@ -13,6 +13,7 @@ export const Container = styled.div`
   height: auto;
   overflow-x: auto;
   scroll-behavior: smooth;
+  padding-top: 150px;
 
   img {
     padding-top: 150px;
@@ -20,12 +21,13 @@ export const Container = styled.div`
 
   @media (max-width: 995px) {
     flex-direction: column-reverse;
+    padding-top: 120px;
     padding-bottom: 80px;
 
     img {
-      width: 440px;
-      height: 440px;
-      padding-top: 170px;
+      width: 540px;
+      height: 540px;
+      padding-top: 10px;
     }
   }
 `;
@@ -54,7 +56,7 @@ export const ContainerTexto = styled.div`
   }
 
   @media (max-width: 995px) {
-    width: 70%;
+    width: 90%;
     padding-top: 60px;
 
     p {

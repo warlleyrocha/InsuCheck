@@ -8,24 +8,24 @@ export const Container = styled.div`
   padding-top: 90px;
   padding-bottom: 200px;
   font-family: 'Urbanist', sans-serif;
-  margin: 0 auto;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 100%;
   position: relative;
+  left: 0;
+  right: 0;
 
   img {
     padding-right: 260px;
   }
 
   @media (max-width: 995px) {
-    max-width: 995px;
     flex-direction: column;
     padding-bottom: 680px;
 
     img {
+      padding-right: 30px;
     }
   }
 `;
@@ -35,6 +35,10 @@ export const Text = styled.div`
   flex-direction: column;
   align-items: flex-start;
   padding-left: 200px;
+
+  @media (max-width: 995px) {
+    width: 80%;
+  }
 
   h1 {
     color: #1e272f;
@@ -105,13 +109,13 @@ export const OverlayImage = styled.img`
 export const BlobDetalhe = styled.img`
   position: absolute;
   transform: translate(-50%, -50%);
-  left: 1430px;
-  top: -56px;
-  z-index: 2;
+  left: -450px;
+  top: -156px;
+  z-index: 1;
 
   @media (max-width: 995px) {
     transform: none;
-    left: 750px;
-    top: -17px;
+    left: 700px;
+    top: 200px;
   }
 `;
