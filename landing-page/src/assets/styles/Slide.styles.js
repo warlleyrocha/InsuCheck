@@ -16,8 +16,12 @@ export const SlideContainer = styled.div`
 
   @media (max-width: 768px) {
     width: 100%;
-    height: auto;
+    height: 273px;
     padding: 16px;
+  }
+
+  @media (max-width: 320px) {
+    height: 320px;
   }
 `;
 
@@ -63,4 +67,8 @@ export const Description = styled.p`
   font-style: normal;
   font-weight: 400;
   padding: 0px 20px;
+
+  @media (max-width: 768px) {
+    padding: 0px 5px;
+  }
 `;

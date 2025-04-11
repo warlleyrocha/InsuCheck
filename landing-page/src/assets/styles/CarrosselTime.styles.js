@@ -23,6 +23,11 @@ export const Container = styled.div`
   justify-content: center;
   width: 100%;
   gap: 12vh;
+
+  @media (max-width: 768px) {
+    padding-top: 60px;
+    gap: 8vh;
+  }
 `;
 
 export const Text = styled.div`
@@ -43,7 +48,7 @@ export const Text = styled.div`
     font-weight: 500;
     line-height: 29.8px;
     flex-wrap: wrap;
-    width: 100ch;
+    width: 100%;
     text-align: center;
   }
 
@@ -52,4 +57,5 @@ export const Text = styled.div`
       width: 90%;
     }
   }
+}
 `
