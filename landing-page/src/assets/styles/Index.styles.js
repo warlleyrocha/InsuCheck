@@ -42,8 +42,10 @@ export const SButton = styled.button`
   `}
 
   @media (max-width: 768px) {
-    font-size: 18px;
-    padding: 8px 12px;
+    
+    padding: 0px 5px;
+    ${({ left }) => left && `left: 2px;`}
+    ${({ right }) => right && `right: 2px;`}
   }
 `;
 

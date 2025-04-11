@@ -14,9 +14,8 @@ export const SlideContainer = styled.div`
 
   scroll-snap-align: start;
 
-
   @media (max-width: 768px) {
-    width: 50vh;
+    width: 100%;
     height: auto;
     padding: 16px;
   }
