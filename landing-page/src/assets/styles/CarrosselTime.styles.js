@@ -48,14 +48,8 @@ export const Text = styled.div`
     font-weight: 500;
     line-height: 29.8px;
     flex-wrap: wrap;
-    width: 100%;
+    width: 90%;
     text-align: center;
-  }
-
-  @media (max-width: 1000px) {
-    p {
-      width: 90%;
-    }
   }
 }
 `
