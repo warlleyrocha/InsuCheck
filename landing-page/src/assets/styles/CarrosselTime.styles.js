@@ -3,25 +3,31 @@ import fundoAzul from '../images/FundoAzul-Carrossel.png'
 
 export const Fundo = styled.div`
   background-image: url(${fundoAzul});
-  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 1512px;
-  height: 694px;
-  margin: 0 auto;
-  margin-top: 120px;
-  margin-bottom: 120px;
+  background-size: contain;
+  width: 100%;
+  margin: 120px 0;
+
+  @media (max-width: 1000px) {
+    background-size: cover;
+  }
 `;
 
 export const Container = styled.div`
   font-family: 'Urbanist', sans-serif;
-  margin: 0 auto;
   padding-top: 120px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
+  gap: 12vh;
+
+  @media (max-width: 768px) {
+    padding-top: 60px;
+    gap: 8vh;
+  }
 `;
 
 export const Text = styled.div`
@@ -42,7 +48,8 @@ export const Text = styled.div`
     font-weight: 500;
     line-height: 29.8px;
     flex-wrap: wrap;
-    width: 80ch;
+    width: 90%;
     text-align: center;
   }
+}
 `
