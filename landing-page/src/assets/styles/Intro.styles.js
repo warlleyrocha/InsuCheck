@@ -28,6 +28,11 @@ export const Container = styled.div`
       padding-right: 30px;
     }
   }
+
+  @media (max-width: 420px) {
+    padding-top: 20px;
+    padding-bottom: 120px;
+  }
 `;
 
 export const Text = styled.div`
@@ -73,6 +78,26 @@ export const Text = styled.div`
       width: 30ch;
     }
   }
+
+  @media (max-width: 420px) {
+    padding-left: 30px;
+
+    h1 {
+      font-size: 26px;
+      line-height: 32px;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 20px;
+      width: 28ch;
+      margin-top: 5px;
+    }
+  }
 `;
 
 export const ImageStack = styled.div`
@@ -80,6 +105,10 @@ export const ImageStack = styled.div`
   width: 100%;
   height: 100%;
   margin-left: 274px;
+
+  @media (max-width: 420px) {
+    display: none;
+  }
 `;
 
 export const BaseImage = styled.img`
@@ -117,5 +146,9 @@ export const BlobDetalhe = styled.img`
     transform: none;
     left: 700px;
     top: 200px;
+  }
+
+  @media (max-width: 420px) {
+    display: none;
   }
 `;
