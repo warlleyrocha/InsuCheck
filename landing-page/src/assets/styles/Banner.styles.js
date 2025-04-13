@@ -30,6 +30,17 @@ export const Container = styled.div`
       padding-top: 10px;
     }
   }
+
+  @media (max-width: 420px) {
+    padding-top: 10px;
+    padding-bottom: 150px;
+
+    img {
+      width: 300px;
+      padding-top: 2px;
+      padding-bottom: 0px;
+    }
+  }
 `;
 
 export const ContainerTexto = styled.div`
@@ -63,6 +74,24 @@ export const ContainerTexto = styled.div`
       width: 50ch
     }
   }
+
+  @media (max-width: 420px) {
+    padding-top: 0px;
+    height: 100%;
+    padding-left: 40px;
+    gap: 1px;
+
+    h1 {
+      font-size: 28px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 22px;
+      width: 30ch;
+      flex-wrap: wrap;
+    }
+  }
 `;
 
 export const Button = styled.div`
@@ -87,5 +116,10 @@ export const Button = styled.div`
     background-color: #fff;
     color: #2f39d3;
     border-color: #2f39d3;
+  }
+
+  @media (max-width: 420px) {
+    font-size: 20px;
+    padding: 12px 22px;
   }
 `;
