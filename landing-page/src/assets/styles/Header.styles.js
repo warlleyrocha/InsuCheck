@@ -22,6 +22,11 @@ export const Container = styled.div`
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(6px);
   border-bottom: 1px solid rgba(77, 77, 77, 0.2);
+
+  @media (max-width: 420px) {
+    max-width: 380px;
+    position: normal;
+  }
 `;
 
 export const Nav = styled.div`
@@ -34,6 +39,16 @@ export const Nav = styled.div`
   @media (max-width: 995px) {
     gap: 1px;
     padding: 15px 8px;
+  }
+
+  @media (max-width: 420px) {
+    max-width: 380px;
+    gap: 1px;
+    padding: 8px 3px;
+
+    img {
+      width: 90px;
+    }
   }
 `;
 
@@ -64,6 +79,17 @@ export const ListaHeader = styled.div`
       transition: all 0.2s ease;
     }
   }
+
+  @media (max-width: 420px) {
+    gap: 0px;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    a {
+      margin: 0 6px;
+    }
+  }
 `;
 
 export const Button = styled.button`
@@ -88,5 +114,9 @@ export const Button = styled.button`
     font-size: 18px;
     margin-left: 38px;
     margin-right: 38px;
+  }
+
+  @media (max-width: 420px) {
+    display: none;
   }
 `;
