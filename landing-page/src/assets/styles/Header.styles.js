@@ -23,6 +23,21 @@ export const Container = styled.div`
   backdrop-filter: blur(6px);
   border-bottom: 1px solid rgba(77, 77, 77, 0.2);
 
+  @media (max-width: 1250px) {
+    max-width: 1000px;
+    left: 80px;
+  }
+
+  @media (max-width: 950px) {
+    max-width: 900px;
+    left: 30px;
+  }
+
+  @media (max-width: 680px) {
+    max-width: 650px;
+    left: 0px;
+  }
+
   @media (max-width: 420px) {
     max-width: 380px;
     position: normal;
@@ -116,7 +131,7 @@ export const Button = styled.button`
     margin-right: 38px;
   }
 
-  @media (max-width: 420px) {
+  @media (max-width: 680px) {
     display: none;
   }
 `;

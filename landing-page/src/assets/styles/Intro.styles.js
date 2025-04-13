@@ -29,7 +29,7 @@ export const Container = styled.div`
     }
   }
 
-  @media (max-width: 420px) {
+  @media (max-width: 680px) {
     padding-top: 20px;
     padding-bottom: 120px;
   }
@@ -106,7 +106,7 @@ export const ImageStack = styled.div`
   height: 100%;
   margin-left: 274px;
 
-  @media (max-width: 420px) {
+  @media (max-width: 680px) {
     display: none;
   }
 `;
@@ -148,7 +148,7 @@ export const BlobDetalhe = styled.img`
     top: 200px;
   }
 
-  @media (max-width: 420px) {
+  @media (max-width: 680px) {
     display: none;
   }
 `;
