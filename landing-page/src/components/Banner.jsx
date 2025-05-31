@@ -11,7 +11,7 @@ const Banner = () => {
           Acompanhe sua glicemia em tempo real, receba alertas inteligentes e
           viva com mais tranquilidade.
         </p>
-        <Button>Teste o APK</Button>
+        <Button onClick={() => window.open ('https://github.com/Ameglebm/AppPipocaAgil', '_blank', 'noopener,noreferrer')}>Teste o APK</Button>
       </ContainerTexto>
       <img src={iPhone13pro} width={560} height={560} />
     </Container>

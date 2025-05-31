@@ -20,7 +20,7 @@ const Intro = () => {
         <p>
           Experimente as funcionalidades em primeira mão e nos dê seu feedback!
         </p>
-        <Button>Teste o APK</Button>
+        <Button onClick={() => window.open ('https://github.com/Ameglebm/AppPipocaAgil', '_blank', 'noopener,noreferrer')}>Teste o APK</Button>
       </Text>
       <ImageStack>
         <BaseImage src={DetalheCirculos} width={400} height={400} />

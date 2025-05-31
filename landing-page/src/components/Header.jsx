@@ -28,7 +28,7 @@ const Header = () => {
               );
             })}
           </ListaHeader>
-          <Button>Download</Button>
+          <Button onClick={() => window.open ('https://github.com/Ameglebm/AppPipocaAgil', '_blank', 'noopener,noreferrer')}>Download</Button>
         </Nav>
       </Container>
   );
